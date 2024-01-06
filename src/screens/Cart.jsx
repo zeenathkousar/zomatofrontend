@@ -16,7 +16,7 @@ export default function Cart() {
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
     console.log(`user email is ${userEmail}`)
-    let response = await fetch("http://localhost:3000/api/orderData", {
+    let response = await fetch("https://backendzomatowebsite.onrender.com/api/orderData {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
